@@ -1,0 +1,419 @@
+
+.background{
+    width:50px; 
+    height:50px; 
+}
+@media (max-width: 767px) {
+}
+.text-input-container-half {
+  width: 50%;
+}
+input[type='text'].text-input,
+input[type='email'].text-input,
+input[type='password'].text-input,
+input[type='tel'].text-input,
+input[type='number'].text-input {
+  height: 36px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 3px;
+  border: 1px var(--bg-inlay) solid;
+  outline: none;
+  resize: none;
+  transition-duration: 0.1s, 0.1s;
+}
+.error-text {
+  height: 36px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 3px;
+  border: 1px var(--fg-red) solid;
+  outline: none;
+  resize: none;
+  transition-duration: 0.1s, 0.1s;
+}
+.text-input-container-error .text-input {
+  border-color: var(--fg-red) !important;
+}
+.text-input-container-error .text-input:focus {
+  border-color: var(--fg-red) !important;
+}
+.text-input-label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'HelveticaNeue', 'Helvetica Neue', Helvetica, 'Roboto', 'Segoe UI', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--fg-secondary);
+  display: inline-block;
+  margin: 4px;
+}
+.text-input-error-list {
+  padding: 0 0 0 16px;
+  margin: 4px 0;
+  margin-top: 8px;
+}
+.text-input-error-list .text-input-label {
+  margin: 0;
+  display: block;
+}
+.text-input-error-label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'HelveticaNeue', 'Helvetica Neue', Helvetica, 'Roboto', 'Segoe UI', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 8px;
+  color: var(--fg-red);
+}
+.text-input-notice-label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'HelveticaNeue', 'Helvetica Neue', Helvetica, 'Roboto', 'Segoe UI', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--fg-blue);
+}
+.text-input-multi-error-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear, opacity 0.1s ease-in-out;
+}
+.text-input-textarea {
+  height: 36px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 3px;
+  border: 1px var(--bg-inlay) solid;
+  outline: none;
+  resize: none;
+  transition-duration: 0.1s, 0.1s;
+  height: 120px;
+}
+.text-input-textarea:read-only {
+  background-color: var(--bg-inlay);
+}
+.text-input-textarea:-moz-read-only {
+  background-color: var(--bg-inlay);
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.text-input-container-has-character-counter {
+  position: relative;
+}
+.text-input-container-has-character-counter input[type='text'].text-input {
+  padding-right: 30px;
+}
+.text-input-character-counter {
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+  color: var(--fg-secondary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'HelveticaNeue', 'Helvetica Neue', Helvetica, 'Roboto', 'Segoe UI', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+.text-input-character-counter-warning {
+  color: var(--fg-red);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'HelveticaNeue-Medium', 'Helvetica Neue Medium', Helvetica-Bold, 'Roboto-Medium', 'Segoe UI Semibold', Arial-Bold, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+@media only screen and (max-width: 479px) {
+}
+.otp-passcode-login-wrapper {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.otp-passcode-login-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'HelveticaNeue-Medium', 'Helvetica Neue Medium', Helvetica-Bold, 'Roboto-Medium', 'Segoe UI Semibold', Arial-Bold, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 0 16px 0;
+}
+.brand_refresh_2020 .otp-passcode-login-title {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 20px 0 10px 0;
+}
+.otp-passcode-login-description {
+  margin-bottom: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+body {
+    margin: 0;
+  }
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+  [hidden],
+  template {
+    display: none;
+  }
+  a {
+    background-color: transparent;
+  }
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+  abbr[title] {
+    border-bottom: 1px dotted;
+  }
+  b,
+  strong {
+    font-weight: bold;
+  }
+  dfn {
+    font-style: italic;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  mark {
+    background: #ff0;
+    color: #000;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sup {
+    top: -0.5em;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  img {
+    border: 0;
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  figure {
+    margin: 1em 40px;
+  }
+  hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+  }
+  pre {
+    overflow: auto;
+  }
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+  button {
+    overflow: visible;
+  }
+  button,
+  select {
+    text-transform: none;
+  }
+  button,
+  html input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+  }
+  button[disabled],
+  html input[disabled] {
+    cursor: default;
+  }
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  input {
+    line-height: normal;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+   
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+  }
+  legend {
+    border: 0;
+    padding: 0;
+  }
+  textarea {
+    overflow: auto;
+  }
+  optgroup {
+    font-weight: bold;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  td,
+  th {
+    padding: 0;
+  }
+  /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+  @media print {
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    thead {
+      display: table-header-group;
+    }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+    img {
+      max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+    select {
+      background: #fff !important;
+    }
+    .navbar {
+      display: none;
+    }
+    .btn > .caret,
+    .dropup > .btn > .caret {
+      border-top-color: #000 !important;
+    }
+    .label {
+      border: 1px solid #000;
+    }
+    .table {
+      border-collapse: collapse !important;
+    }
+    .table td,
+    .table th {
+      background-color: #fff !important;
+    }
+    .table-bordered th,
+    .table-bordered td {
+      border: 1px solid #ddd !important;
+    }
+  }
+  @font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(https://d19rpgkrjeba2z.cloudfront.net/static/gen/5ed8ce6d7757638311ffdaa820021aae.eot);
+    src: url(https://d19rpgkrjeba2z.cloudfront.net/static/gen/5ed8ce6d7757638311ffdaa820021aae.eot?#iefix) format('embedded-opentype'), url(https://d19rpgkrjeba2z.cloudfront.net/static/gen/_/_/_/static/nextdoorv2/fonts/glyphiconshalflings-regular_b177def5c9d78ab14562ca652b7bed48.woff) format('woff'), url(https://d19rpgkrjeba2z.cloudfront.net/static/gen/fc7ebef874e3a3786aa60d9bc4a75519.ttf) format('truetype'), url(https://d19rpgkrjeba2z.cloudfront.net/static/gen/df825a1360c7318e5e6240babe4d6b05.svg#glyphiconshalflings-regular) format('svg');
+  }
+  .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

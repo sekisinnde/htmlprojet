@@ -1,0 +1,16 @@
+/* ######  1250px >= tablettes >= 550px ######  */
+@media (min-width: 550px) and (max-width: 1250px) {
+    /* le texte va avoir des marges de 40px */
+    .texte-introduction {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+ }
+
+ /* ###### desktop  ######  */
+@media (min-width: 1251px) {
+    /* TODO */
+  }
+.background{
+    width: 100%;    
+}
