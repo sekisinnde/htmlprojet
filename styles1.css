@@ -9,7 +9,6 @@ nav #login{
     
 section{
     border:solid;
-    border-color: red;
     display: flex;
     width: 65%;
     margin-left: auto;
@@ -100,7 +99,7 @@ list-style: none;
     
 
 }
-.test1 {
+/* .test1 {
     border: 1px solid red;
 }
 .test2 {
@@ -111,7 +110,7 @@ list-style: none;
 }
 .test4 {
     border: 1px solid red;
-}
+} */
 
 
 
